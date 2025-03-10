@@ -1,0 +1,139 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: conic-gradient(from 45deg, #FFFFFF, #26471B);
+    }
+.hero {
+        color: #fff;
+        text-align: left;
+        padding: 10px 20px ;
+        position: relative;
+        display: flex;
+        align-items: center;
+        min-height: 400px;
+        overflow: hidden;
+        }
+.header-content {
+        position: absolute;
+        top: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+        text-align: center;
+    }
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 0;
+}
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+.slide.active {
+    opacity: 1;
+}
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.content-area {
+    display: flex;
+    flex-wrap: wrap;
+     padding: 20px;
+}
+.column {
+    flex: 1;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    box-sizing: border-box;
+     min-width: 300px;
+ }
+.column:last-child {
+    border-right: none;
+}
+.feature,
+.practice,
+.market {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+.footer {
+    text-align: left;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+.government-sign {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.government-sign img {
+    max-height: 50px;
+    margin: 0 10px;
+}
+@media (max-width: 768px) {
+    .column {
+        flex: 1 1 100%;
+        border-right: none;
+    }}
+.top-nav {
+            background-color: #26471b;
+            /* Darker background */
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+        }
+.nav-link {
+            color: white;
+            text-decoration: none;
+            margin-right: 50px;
+            padding: 5px 10px;
+        }
+.search-container {
+        display: flex;
+        margin-left: auto;
+        margin-top: 2px;
+        margin-right: 10px;
+    }
+.search-input {
+    padding: 8px 10px;
+            border: 1px solid #333;
+        background-color: #222;
+        color: white;
+        border-radius: 3px;
+}
+.search-button {
+    background-color: green;
+        color: white;
+        border: none;
+        padding: 8px 12px;
+        cursor: pointer;
+        border-radius: 3px;
+}
+.nav-link:hover {
+    text-decoration: none;
+    color: #fff;
+    box-shadow: inset 0 0 100px #73AD61;
+    transition: box-shadow 1s ease;
+}
+.search-button:hover {
+    background-color: green;
+    box-shadow:
+        0 0 12px green,
+        0 0 22px green,
+        0 0 32px green;
+    transition: box-shadow 0.3s ease;
+}
